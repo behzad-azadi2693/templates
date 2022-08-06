@@ -1,0 +1,7 @@
+venv
+__pycache__
+db*
+00*
+.git
+static
+media

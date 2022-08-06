@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>صفحه محصول</title>
+    <link rel="stylesheet" href="assets/vendor/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/vendor/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mediaq.css">
+    <script>
+        window.jQueryQ = window.jQueryQ || [];
+        window.$ = window.jQuery = function() {
+            window.jQueryQ.push(arguments);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+    <section class="top-head container">
+        <div class="right-head">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.svg" ></a>
+            </div>
+            <form action="#">
+                <button><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="جستجو در تک شاپ ...">
+            </form>
+        </div>
+        <div class="left-head">
+            <div class="login-box">
+                <div class="log-reg" id="logreg">
+                    <i class="fa fa-user"></i>
+                    <a href="login.html"> ورود به حساب کاربری </a>
+
+                    <!--<div class="user-modal">
+                        <a class="login" href="#">ورود به تک کالا</a>
+                        <div class="newuser">
+                            <span>کاربر جدید هستید؟</span>
+                            <a href="#">ثبت نام</a>
+                        </div>
+                        <a class="profile" href="#"><i class="fa fa-user"></i> پروفایل</a>
+                        <a class="order" href="#"><i class="fa fa-folder"></i> پیگیری سفارش</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="devider"></div>
+
+            <a href="cart.html" class="cart">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+        </div>
+
+
+    </section>
+
+    <nav class="top-nav container">
+        <ul class="dropdown" id="mynavmenu">
+            <li class="main-category"><i class="fa fa-bars"></i><a href="#">دسته بندی کالاها</a>
+                <ul class="dropdown2">
+                    <li><a href="#">کالای تکتال</a>
+                        <ul class="megamenu">
+                            <li><a href="#">موبایل</a>
+                                <ul>
+                                    <li><a href="#">مدل موبایل</a></li>
+                                    <li><a href="#">کیف و کاور</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">کامپیوتر</a>
+                                <ul>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">تجهیزات اداری</a>
+                                <ul>
+                                    <li><a href="#">کالای اول</a></li>
+                                    <li><a href="#">کالای دوم</a></li>
+                                    <li><a href="#">کالای سوم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">تبلت</a>
+                                <ul>
+                                    <li><a href="#">لنوو</a></li>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">ایسوس</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">دوربین</a>
+                                <ul>
+                                    <li><a href="#">کیف,کوله و کاور</a></li>
+                                    <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                    <li><a href="#">کابل صدا و HDMI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">لوازم جانبی لپ تاپ</a>
+                                <ul>
+                                    <li><a href="#">کیف,کوله و کاور</a></li>
+                                    <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                    <li><a href="#">کابل صدا و HDMI</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">اسکوتر برقی</a>
+                                <ul>
+                                    <li><a href="#">کالای اول</a></li>
+                                    <li><a href="#">کالای دوم</a></li>
+                                    <li><a href="#">کالای سوم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ماشین های اداری</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">مچ بند و ساعت هوشمند</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">دوربین های تحت شبکه</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">آرایشی و بهداشتی</a></li>
+                    <li><a href="#">مد و پوشاک</a></li>
+                    <li><a href="#">خانه و آشپزخانه</a></li>
+                    <li><a href="#">ورزش و سفر</a></li>
+                    <li><a href="#">کتاب,لوازم تحریر</a></li>
+                    <li><a href="#">سوپرمارکت</a></li>
+                </ul>
+            </li>
+            <li><a href="#">سوپرمارکت</a></li>
+            <li><a href="#">تخفیف ها و پیشنهادها</a></li>
+            <li><a href="#">تک شاپ من</a></li>
+            <li><a href="#">تک کلاب</a></li>
+            <li><a href="#">سوالی دارید؟</a></li>
+            <li><a href="#">فروشنده شوید</a></li>
+        </ul>
+        <ul class="promotion"><li><a href="#">لطفا شهر و استان خود را انتخاب کنید</a><i class="fa fa-map-marker"></i></li></ul>
+
+    </nav>
+
+</header>
+    <section class="product-wrapper container">
+        <div class="headline">
+            <h3>محصولات مرتبط</h3></div>
+        <div id="vpslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/965174.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل شیائومی مدل Redmi Note 8 Pro M1906G7G دو سیم‌ کارت</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/119240285.jpg" alt=""></a> <a class="title" href="#">کاور مدل SOR-010 مناسب برای گوشی موبایل سامسونگ</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/363465.jpg" alt=""></a> <a class="title" href="#">شارژر همراه انکر مدل A1271 PowerCore ظرفیت 20100 م</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/112551619.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل سامسونگ مدل Galaxy Note 10 Plus N975F/DS</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/111253599.jpg" alt=""></a> <a class="title" href="#">تبلت سامسونگ مدل Galaxy Tab S5e 10.5 LTE 2019 SM-T725</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/113944020.jpg" alt=""></a> <a class="title" href="#">اندروید باکس مدل R69</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/2901119.jpg" alt=""></a> <a class="title" href="#">دسته بازی هویت مدل G89W</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+            </div>
+            <div id="vpslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+            <div id="vpslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+        </div>
+    </section>
+    <div class="container">
+        <nav>
+            <ul class="c-breadcrumb">
+                <li class="list-item"><a href="#">فروشگاه اینترنتی تک‌کالا</a></li>
+                <li class="list-item"><a href="#">کالای تکتال</a></li>
+                <li class="list-item"><a href="#">موبایل</a></li>
+                <li class="list-item"><a href="#">گوشی موبایل</a></li>
+                <li class="list-item"><a href="#"> تبلت سامسونگ مدل GALAXY TAB S6 ظرفیت 128 گیگابایت </a></li>
+            </ul>
+        </nav>
+        <article class="c-product">
+            <section class="c-product__info">
+                <div class="c-product__headline">
+                    <h1 class="c-product__title"> <span class="fa-title"> تبلت سامسونگ مدل GALAXY TAB S6 ظرفیت 128 گیگابایت </span> <span class="en-title">Samsung GALAXY TAB S6 Tablet 128 GB</span></h1> <span class="c-product__guaranteed">بیش از ۱۰ نفر از خریداران این محصول را پیشنهاد داده‌اند</span></div>
+                <div class="c-product__attributes">
+                    <div class="c-product__config hidden">
+                        <div class="c-product__directory">
+                            <ul>
+                                <li> <span>برند : </span> <a href="#" class="btn-link-spoiler">سامسونگ</a></li>
+                                <li> <span>دسته بندی : </span> <a href="#" class="btn-link-spoiler">تبلت و کتابخوان</a></li>
+                            </ul>
+                        </div>
+                        <div class="c-product__variants"> <span>رنگ : </span>
+                            <ul>
+                                <li>
+                                    <label> <span></span>
+                                        <input type="radio"> <span>قرمز</span> </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="c-product__guarantee"> <span>گارانتی ۱۸ ماهه داتیس امارات</span></div>
+                        <div class="c-product__delivery">
+                            <div class="seller"> <span> فروشنده</span> <a href="#" class="btn-link-spoiler">تک کالا</a></div>
+                            <div class="delivery-warehouse"> <span>ارسال از ۱ روز آینده</span></div>
+                        </div>
+                        <div class="c-price original">۲,۶۶۹,۰۰۰ تومان</div>
+                        <div class="c-product__add"> <a class="btn-add-to-cart" href="#"><span>افزودن به سبد خرید</span></a>
+                            <div class="c-product__unfair-price"> <span>آیا از قیمت راضی هستید؟ </span> <a class="btn-link-spoiler" href="#">بله</a> | <a class="btn-link-spoiler" href="#">خیر</a></div>
+                        </div>
+                    </div>
+                    <section class="out-stock">
+                        <div class="c-message c-message--info">متاسفانه این کالا در حال حاضر موجود نیست. می‌توانید از طریق لیست بالای صفحه، از محصولات مشابه این کالا دیدن نمایید</div>
+                        <div class="c-product__add">
+                            <button class="btn-notify-me ">موجود شد به من اطلاع بده</button>
+                        </div>
+                    </section>
+                </div>
+                <aside class="c-product__feature">
+                    <a class="i-item" href="#"> <img src="assets/images/icon/i1.svg" alt=""> <span>امکان تحویل اکسپرس</span> </a>
+                    <a class="i-item" href="#"> <img src="assets/images/icon/i2.svg" alt=""> <span>پشتیبانی ۲۴ ساعته</span> </a>
+                    <a class="i-item" href="#"> <img src="assets/images/icon/i3.svg" alt=""> <span>امکان پرداخت در محل</span> </a>
+                    <a class="i-item" href="#"> <img src="assets/images/icon/i4.svg" alt=""> <span>۷ روز ضمانت بازگشت کالا</span> </a>
+                    <a class="i-item" href="#"> <img src="assets/images/icon/i5.svg" alt=""> <span>ضمانت اصل بودن کالا</span> </a>
+                </aside>
+            </section>
+            <section class="c-product__gallery">
+                <div class="c-product__special-deal hidden">
+                    <div class="c-counter--special-deal"></div>
+                </div>
+                <!--<div class="c-product__status-bar c-product__status-bar--out-of-stock">ناموجود</div>-->
+                <div class="c-gallery">
+                    <div class="c-gallery__item">
+                        <ul class="c-gallery__options">
+                            <li>
+                                <button class="btn-option btn-option--add-to-wish"></button>
+                            </li>
+                            <li>
+                                <button class="btn-option btn-option--social"></button>
+                            </li>
+                            <li>
+                                <button class="btn-option btn-option--compare"></button>
+                            </li>
+                            <li>
+                                <button class="btn-option btn-option--stats"></button>
+                            </li>
+                        </ul>
+                        <div class="c-gallery__img"> <img src="assets/images/119350700.jpg" class="xzoom" alt=""></div>
+                    </div>
+                    <ul class="c-gallery__items">
+                        <li><img src="assets/images/119350700.jpg" alt=""></li>
+                        <li><img src="assets/images/119350696.jpg" alt=""></li>
+                        <li><img src="assets/images/119350706.jpg" alt=""></li>
+                        <li><img src="assets/images/119350704.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <section class="p-tabs">
+            <ul class="c-box-tabs">
+                <li class="c-box-tabs__tab is-active"><a id="desc" href="#"><i class="fa fa-glasses"></i> <span>نقد و بررسی</span></a></li>
+                <li class="c-box-tabs__tab"><a id="params" href="#"><i class="fa fa-tasks"></i> <span>مشخصات</span></a></li>
+                <li class="c-box-tabs__tab"><a id="comments" href="#"><i class="fa fa-comments"></i> <span>نظرات کاربران</span></a></li>
+                <li class="c-box-tabs__tab"><a id="questions" href="#"><i class="fa fa-question-circle"></i> <span>پرسش و پاسخ</span></a></li>
+            </ul>
+            <div class="c-box--tabs p-tabs__content">
+                <div id="desc" class="c-content-expert is-active">
+                    <article>
+                        <h2 class="c-params__headline"> نقد و بررسی اجمالی <span> تبلت سامسونگ مدل GALAXY TAB S6 ظرفیت 128 گیگابایت </span></h2>
+                        <section class="c-content-expert__summary">
+                            <div class="c-mask">
+                                <div class="c-mask__text c-mask__text--product-summary" style="max-height: 250px;height: unset;">
+                                    <p>شرکتی جدید با نام «الفون» (Elephone) راه به بازار گوشی‌های همراه باز کرده و با تولید محصولات جدید و متنوع می‌تواند آینده‌ی خوبی پیش رو داشته باشد. یکی از گوشی‌های این شرکت با مدل P8 مانند بسیاری از گوشی‌های جدید ساخت شرکت‌های مطرح، حسگر اثر انگشت دارد. این گوشی در سه رنگ مشکی، قرمز و نسکافه‌ای به بازار عرضه شده است و با مشخصات سخت‌افزاری‌ای که دارد، در دسته‌ی بالارده‌ها قرار می‌گیرد. یک گوشی با سخت‌افزار قوی و حرفه‌ای. گوشی P8 از پردازنده‌ی مدیاتک مدل Helio P25 برای پردازش محاسبات استفاده می‌کند و 6 گیگابایت رم این پردازنده‌ی هشت‌هسته‌ای را همراهی می‌کند که در مجموع عملکرد بسیار روان و مناسبی را فراهم می‌کند. حافظه‌ی داخلی آن ‍64 گیگابایت است و می‌توان با کارت حافظه‌ی جانبی این مقدار را ارتقا داده و تا 128 گیگابایت فضای ذخیره‌سازی داشته باشید که بسیار خوب است. این گوشی از شبکه پرسرعت 4G پشتیبانی می‌کند و دو درگاه سیم‌کارت نانو دارد. البته باید به این نکته توجه کنید که اگر می‌خواهید از شیار دوم برای کارت حافظه استفاده کنید باید قید سیم‌کارت دوم را بزنید؛ چون شیار دوم یا برای سیم‌کارت استفاده می‌شود یا کارت حافظه و شیار مستقلی برای کارت حافظه در نظر گرفته نشده است. قسمت بعدی که به آن می‌پردازیم دوربین این موبایل است که در قاب پشتی از یک دوربین با سنسور 21 مگاپیکسلی به عنوان دوربین اصلی و در قاب جلو از یک سنسور 16 مگاپیکسلی به‌عنوان دوربین سلفی استفاده شده است که در مجموع کیفیت بسیار خوبی را در اختیار کاربر قرار می‌دهد. ویژگی‌های مختلفی از جمله عکاسی Panorama، عکاسی HDR، قابلیت فوکوس اتوماتیک یا فوکوس با اشاره روی سوژه تعدادی از ویژگی‌های این دوربین است. نمایشگر P8 از نوع LCD با فناوری IPS است و اندازه‌ی 5.5 اینچی دارد. رزولوشن این صفحه‌نمایش FullHD معادل 1080x1920 پیکسل است که روشنایی و وضوح بسیار خوبی دارد و برای بازی و تماشای فیلم مناسب است. با وجود سنسور اثر انگشت هم می‌توانید از امنیت فایل‌های شخصی و دیتاهای روی گوشی خود اطمینان داشته باشید. این گوشی برای کسانی مناسب است که می‌خواهند یک موبایل جدید با امکانات خوب داشته باشند ولی هزینه‌ی زیادی هم برای آن نپردازند. برند الفون نامی جدید در صنعت گوشی‌های همراه است و باید دید تا چه حد در رقابت بازار گوشی‌های میان‌رده و در میان برندهای موفق دیگر مثل هوآوی، شیائومی و دیگر شرکت‌ها موفق خواهد بود.</p>
+                                </div> <a href="#" class="c-mask__handler">ادامه مطلب</a></div>
+                        </section>
+                        <section class="c-content-expert__stats">
+                            <label for="quality">کیفیت ساخت</label>
+                            <select id="quality">
+                                <option value="1">خیلی بد</option>
+                                <option value="2">بد</option>
+                                <option value="3">معمولی</option>
+                                <option value="4">خوب</option>
+                                <option value="5">عالی</option>
+                            </select>
+                        </section>
+                    </article>
+                </div>
+                <div id="params">
+                    <article>
+                        <h2 class="c-params__headline"> مشخصات فنی <span>Elephone P8 Dual SIM 64GB Mobile Phone</span></h2>
+                        <section>
+                            <h3 class="c-params__title">مشخصات کلی</h3>
+                            <ul class="c-params__list">
+                                <li>
+                                    <div class="c-params__list-key"> <span class="block">ابعاد</span></div>
+                                    <div class="c-params__list-value"> <span class="block">9.5 × 75.5 × 153.9 میلی‌متر</span></div>
+                                </li>
+                                <li>
+                                    <div class="c-params__list-key"> <span class="block">توضیحات سیم کارت</span></div>
+                                    <div class="c-params__list-value"> <span class="block">سایز نانو (8.8 × 12.3 میلی‌متر)</span></div>
+                                </li>
+                                <li>
+                                    <div class="c-params__list-key"> <span class="block">وزن</span></div>
+                                    <div class="c-params__list-value"> <span class="block">186 گرم</span></div>
+                                </li>
+                                <li>
+                                    <div class="c-params__list-key"> <span class="block">ساختار بدنه</span></div>
+                                    <div class="c-params__list-value"> <span class="block">کاربرد شیار دوم برای سیم‌کارت یا کارت حافظه‌ی جانبی</span> <span class="block">قاب پشتی کاملا فلزی از جنس آلومینیوم</span></div>
+                                </li>
+                                <li>
+                                    <div class="c-params__list-key"> <span class="block">ویژگی‌های خاص</span></div>
+                                    <div class="c-params__list-value"> <span class="block">مجهز به حس‌گر اثرانگشت , مناسب بازی , مناسب عکاسی , مناسب عکاسی سلفی</span></div>
+                                </li>
+                                <li>
+                                    <div class="c-params__list-key"> <span class="block">تعداد سیم کارت</span></div>
+                                    <div class="c-params__list-value"> <span class="block">دو سیم کارت</span></div>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+                <div id="comments">
+                    <h2 class="c-comments__headline"> امتیاز کاربران به: <span> تبلت سامسونگ مدل GALAXY TAB S6 ظرفیت 128 گیگابایت  | ۲ / ۵ (۴۲ نفر)</span></h2>
+                    <div class="c-comments__summary">
+                        <div class="c-comments__summary-box">rating</div>
+                        <div class="c-comments__summary-note"> <span>شما هم می‌توانید در مورد این کالا نظر بدهید.</span>
+                            <p>برای ثبت نظر، لازم است ابتدا وارد حساب کاربری خود شوید. اگر این محصول را قبلا از تک‌کالا خریده باشید، نظر شما به عنوان مالک محصول ثبت خواهد شد.</p> <a href="#" class="btn-add-comment is-disabled"><span>افزودن نظر جدید</span></a></div>
+                    </div>
+                    <div class="c-comments__filter">
+                        <h4 class="c-faq__filter-title">نظرات کاربران</h4>
+                        <ul class="c-faq__filter-items" data-title="مرتب‌سازی بر اساس:">
+                            <li><a class="is-active" href="#">نظر خریداران</a></li>
+                            <li><a href="#">مفیدترین نظرات</a></li>
+                            <li><a href="#">جدیدترین نظرات</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-comment-list">
+                        <ul class="c-comments__list">
+                            <li>
+                                <section>
+                                    <div class="aside">
+                                        <div class="c-message-light c-message-light--purchased">خریدار این محصول</div>
+                                        <div class="c-comments__user-shopping">
+                                            <li>رنگ خریداری شده : قرمز</li>
+                                            <li>خریداری شده از: تک کالا</li>
+                                        </div>
+                                        <div class="c-message-light c-message-light--opinion-negative"> خرید این محصول را توصیه نمی‌کنم</div>
+                                    </div>
+                                    <div class="article">
+                                        <div class="header"> <span>بررسی الفون p8</span> <span>توسط محمدزمان کلانی ساروکلایی در تاریخ ۷ شهریور ۱۳۹۷</span></div>
+                                        <div class="c-comments__evaluation">
+                                            <div class="c-comments__evaluation-positive"> <span>نقاط قوت</span>
+                                                <ul>
+                                                    <li>رم و حافظه داخلی بالا</li>
+                                                </ul>
+                                            </div>
+                                            <div class="c-comments__evaluation-negative"> <span>نقاط ضعف</span>
+                                                <ul>
+                                                    <li>باطری ضعیف</li>
+                                                    <li>دوربین ضعیف در شب</li>
+                                                    <li>قیمت بالا</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p>گوشی از نظرظاهری خوبه باطریش زود شارژ خالی میکنه کیفیت عکس در شب و نور کم اصلن خوب نیست ولی در روز خوبه در مقایسه با j7 prime 2 2018 گوشی الفون بازنده واقعی هست تنها برتری اون تو رم 6گیگ و حافظه داخلی 64هست</p>
+                                        <div class="footer">
+                                            <div class="c-comments__likes"> <span>آیا این نظر برایتان مفید بود؟</span>
+                                                <button class="btn-like"> ۷۵ بله </button>
+                                                <button class="btn-like"> ۲۴ خیر </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section>
+                                    <div class="aside">
+                                        <div class="c-message-light c-message-light--purchased">خریدار این محصول</div>
+                                        <div class="c-comments__user-shopping">
+                                            <li>رنگ خریداری شده : قرمز</li>
+                                            <li>خریداری شده از: تک کالا</li>
+                                        </div>
+                                        <div class="c-message-light c-message-light--opinion-noidea"> در مورد خرید این محصول مطمئن نیستم</div>
+                                    </div>
+                                    <div class="article">
+                                        <div class="header"> <span>اصلاارزش نداردنخیر</span> <span>توسط جواد بیک پور در تاریخ ۱۱ آبان ۱۳۹۷</span></div>
+                                        <div class="c-comments__evaluation">
+                                            <div class="c-comments__evaluation-positive"> <span>نقاط قوت</span>
+                                                <ul>
+                                                    <li>رم و حافظه داخلی بالا</li>
+                                                </ul>
+                                            </div>
+                                            <div class="c-comments__evaluation-negative"> <span>نقاط ضعف</span>
+                                                <ul>
+                                                    <li>باطری ضعیف</li>
+                                                    <li>دوربین ضعیف در شب</li>
+                                                    <li>قیمت بالا</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p>نخریداصلاخوب نیست</p>
+                                        <div class="footer">
+                                            <div class="c-comments__likes"> <span>آیا این نظر برایتان مفید بود؟</span>
+                                                <button class="btn-like"> ۲۲ بله </button>
+                                                <button class="btn-like"> ۴ خیر </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                        </ul>
+                        <div class="c-pager">
+                            <ul class="c-pager__items">
+                                <li><a class="c-pager__item is-active" href="#">1</a></li>
+                                <li><a class="c-pager__item" href="#">2</a></li>
+                                <li><a class="c-pager__item" href="#">3</a></li>
+                                <li><a class="c-pager__item" href="#">4</a></li>
+                                <li><a class="c-pager__item" href="#">>></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="questions">
+                    <div class="c-faq__headline">پرسش و پاسخ <span>پرسش خود را در مورد محصول مطرح نمایید</span></div>
+                    <form action="#" class="c-form-faq">
+                        <textarea name="qa[body]" title="متن سوال" class="c-ui-textarea__field disabled" disabled=""></textarea>
+                        <div class="form-row">
+                            <button class="btn-tertiary">ثبت پرسش</button>
+                            <div class="agreement">
+                                <input id="agree" type="checkbox">
+                                <label for="agree"> اولین پاسخی که به پرسش من داده شد، از طریق ایمیل به من اطلاع دهید.
+                                    <br> با انتخاب دکمه “ثبت پرسش”، موافقت خود را با قوانین انتشار محتوا در تک کالا اعلام می کنم. </label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="c-comments__filter">
+                        <h4 class="c-faq__filter-title">نظرات کاربران</h4>
+                        <ul class="c-faq__filter-items" data-title="مرتب‌سازی بر اساس:">
+                            <li><a class="is-active" href="#">پرسش ها و پاسخ ها ( ۱ پرسش )</a></li>
+                            <li><a href="#">بیشترین پاسخ به پرسش های شما</a></li>
+                            <li><a href="#">جدیدترین پرسش ها</a></li>
+                            <li><a href="#">پرسش های شما</a></li>
+                        </ul>
+                    </div>
+                    <div id="product-questions-list">
+                        <ul class="c-faq__list">
+                            <li class="is-question">
+                                <div class="section">
+                                    <div class="c-faq__header c-faq__header--question header">
+                                        <p class="h5"> پرسش <span>محمدامین Kor</span></p>
+                                    </div>
+                                    <p>سلام این گوشی الفون مدلp8 دوسیم کارته ظرفیت64 ایا رجستری شدس؟اگه نه میشه خودمون رجستریش کنیم؟</p>
+                                    <div class="footer"> <em>۸ شهریور ۱۳۹۷</em> <a href="#" class="btn-link-spoiler js-add-answer-btn">به این پرسش پاسخ دهید (۱ پاسخ) </a></div>
+                                </div>
+                            </li>
+                            <li class="is-answer">
+                                <div class="section">
+                                    <div class="header">
+                                        <p class="h5">پاسخ</p>
+                                    </div>
+                                    <div class="c-faq__answer-row">
+                                        <div class="c-faq__answer-col c-faq__answer-col--form"> <span class="h3">به این سوال پاسخ دهید</span>
+                                            <form action="#">
+                                                <textarea></textarea>
+                                                <div class="form-row">
+                                                    <button class="btn-default">ثبت پاسخ</button>
+                                                    <div class="agreement">
+                                                        <input id="agree" type="checkbox">
+                                                        <label for="agree">با انتخاب دکمه "ثبت پاسخ"، موافقت خود را با قوانین انتشار محتوا در تک‌کالا اعلام می‌کنم.</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="c-faq__answer-col c-faq__answer-col--rules"> <span class="h4">چگونه یک پاسخ مناسب بنویسیم ؟</span>
+                                            <ul class="c-faq__rules-list">
+                                                <li> <span class="h5">قبلا از این محصول استفاده کرده‌اید؟</span>
+                                                    <p>همیشه بهتر است، به سوالاتی پاسخ بدهید که سوال شخصی شما پیش از این بوده و با تجربه یا تحقیق پاسخ آن را بدست آورده اید.</p>
+                                                </li>
+                                                <li> <span class="h5">خوانندگان خود را آموزش دهید</span>
+                                                    <p>اگر سوال پرسیده شده مربوط به تخصص یا تجربه شماست، بدون تعصب، پاسخ مرتبط را به شیوه ای که خواننده بتواند از آن استفاده کند، ارائه دهید.</p>
+                                                </li>
+                                                <li> <span class="h5">خودتان باشید، آموزنده باشید</span>
+                                                    <p>نظرات و انتقادات خودتان را بازگو کنید اما به یاد داشته باشید که نظراتتان باید منطقی باشد.</p>
+                                                </li>
+                                                <li> <span class="h5">مختصرگو باشید</span>
+                                                    <p>خلاق باشید اما موضوع نقد را فراموش نکنید، یک عنوان جذاب همیشه خوانندگان را جذب می کند.</p>
+                                                </li>
+                                                <li> <span class="h5">خوانا بنویسید</span>
+                                                    <p>یک ویرایش صحیح و کنترل املای صحیح کلمات اعتبار بیشتری به نقد و بررسی نوشته شده توسط شما می دهد. همچنین برای بالا رفتن خوانایی، فاصله بین پاراگراف ها و بالت گذاری را رعایت کنید.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="is-answer">
+                                <div class="section">
+                                    <div class="header">
+                                        <p class="h5">پاسخ <span>حسن شفیعی</span></p>
+                                    </div>
+                                    <p>سلام گوشی نو هستش برادر میتونی بعد خرید مالکیت بزنی هیچ مشکلی نداره.. دسته دوم نیس که بگی رجیستر هس یا نه. شما از یه فروشگاه معتبر تک کالا خرید میکنی.</p>
+                                    <div class="footer"> <em>۲۱ مهر ۱۳۹۷</em>
+                                        <div class="c-faq__likes"> <span>آیا این پاسخ برایتان مفید بود ؟</span>
+                                            <button class="btn-like"> بله ۲۳ </button>
+                                            <button class="btn-like"> خیر ۵ </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-wrapper container">
+            <div class="headline">
+                <h3>خریداران این محصول، محصولات زیر را هم خریده‌اند</h3></div>
+            <div id="mvpslider" class="swiper-container">
+                <div class="product-box swiper-wrapper">
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/p6.jpg" alt=""></a> <a class="title" href="#">مایکروو مدل جدید</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/119238416.jpg" alt=""></a> <a class="title" href="#">برچسب بدنه خودرو طرح گوزن کد 146</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/119279565.jpg" alt=""></a> <a class="title" href="#">اسپرسوساز مباشی مدل ECM2015</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/119240285.jpg" alt=""></a> <a class="title" href="#">کاور مدل SOR-010 مناسب برای گوشی موبایل سامسونگ</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/4272035.jpg" alt=""></a> <a class="title" href="#">دسته بازی بی سیم مکسیدر مدل MX-GP8110 WN12 بسته دو عددی</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/p6.jpg" alt=""></a> <a class="title" href="#">مایکروو مدل جدید</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                </div>
+                <div id="mvpslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+                <div id="mvpslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+            </div>
+        </section>
+    </div>
+    <div class="jump-to-up"> <i class="fa fa-chevron-up"></i> <span> بازگشت به بالا </span></div>
+    <footer>
+        <section class="footer container">
+            <div class="icon">
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/1.svg" alt=""> <span>7 روز ضمانت بازگشت</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/2.svg" alt=""> <span>پرداخت در محل</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/4.svg" alt=""> <span>تحویل اکسپرس</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/3.svg" alt=""> <span>پشتیبانی ۲۴ ساعته</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/5.svg" alt=""> <span>ضمانت اصل بودن کالا</span> </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="shop-help">
+                    <h3 class="head">راهنمای خرید از شاپ</h3>
+                    <ul>
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+                        <li><a href="#">شیوه های پرداخت</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h3 class="head">خدمات مشتریان</h3>
+                    <ul>
+                        <li><a href="#">پاسخ به پرسش های متداول</a></li>
+                        <li><a href="#">رویه های بازگرداندن کالا</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3 class="head">از تخفیف ها و جدیدترین های شاپ با خبر باشید</h3>
+                    <div class="content">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <h3 class="head">ما را در شبکه های اجتماعی دنبال کنید</h3>
+                        <div class="social"> <a href=""><i class="fa fa-instagram"></i></a> <a href=""><i class="fa fa-twitter-square"></i></a> <a href=""><i class="fa fa-facebook-square"></i></a> <a href=""><i class="fa fa-google-plus-square"></i></a></div>
+                    </div>
+                </div>
+                <div class="cert">
+                    <h3 class="head">مجوزهای فروشگاه</h3>
+                    <div class="image"> <img src="assets/images/cert/enamad.png" alt=""> <img src="assets/images/cert/samandehi.png" alt=""></div>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <div class="contact"> <span>هفت روز هفته, ۲۴ ساعت شبانه روز پاسخگوی شما هستیم,</span> <span>شماره تماس : ۰۴۴-۳۳۳۳</span> <span>آدرس ایمیل : info@site.com</span></div>
+                <div class="app"> <img src="assets/images/bazar.png" alt=""> <img src="assets/images/sibapp.png" alt=""></div>
+            </div>
+            <div class="copyright">
+                <p>استفاده از مطالب فروشگاه اینترنتی تک‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به شرکت فلان (فروشگاه آنلاین تک‌کالا) می‌باشد.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        jQuery(function() {
+            jQuery.each(window.jQueryQ || [], function(i, a) {
+                setTimeout(function() {
+                    jQuery.apply(this, a);
+                }, 0);
+            });
+        });
+    </script>
+    <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="assets/vendor/slicknav/jquery.slicknav.min.js"></script>
+    <script src="assets/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/elevatezoom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

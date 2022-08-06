@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>فروشگاه اینترنتی</title>
+    <link rel="stylesheet" href="assets/vendor/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/vendor/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mediaq.css">
+</head>
+<body>
+    <header>
+        <section class="top-head container">
+            <div class="right-head">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.svg" ></a>
+                </div>
+                <form action="#">
+                    <button><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="جستجو در دیجی شاپ ...">
+                </form>
+            </div>
+            <div class="left-head">
+                <div class="login-box">
+                    <div class="log-reg" id="logreg">
+                        <i class="fa fa-user"></i>
+                        <a href="login.html"> ورود به حساب کاربری </a>
+
+                        <!--<div class="user-modal">
+                            <a class="login" href="#">ورود به دیجی کالا</a>
+                            <div class="newuser">
+                                <span>کاربر جدید هستید؟</span>
+                                <a href="#">ثبت نام</a>
+                            </div>
+                            <a class="profile" href="#"><i class="fa fa-user"></i> پروفایل</a>
+                            <a class="order" href="#"><i class="fa fa-folder"></i> پیگیری سفارش</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="devider"></div>
+
+                <a href="cart.html" class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+
+
+        </section>
+        
+        <nav class="top-nav container">
+                <ul class="dropdown" id="mynavmenu">
+                    <li class="main-category"><i class="fa fa-bars"></i><a href="#">دسته بندی کالاها</a>
+                        <ul class="dropdown2">
+                            <li><a href="#">کالای دیجیتال</a>
+                                <ul class="megamenu">
+                                    <li><a href="#">موبایل</a>
+                                        <ul>
+                                            <li><a href="#">مدل موبایل</a></li>
+                                            <li><a href="#">کیف و کاور</a></li>
+                                            <li><a href="#">پاور بانک</a></li>
+                                            <li><a href="#">پایه نگهدارنده</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">کامپیوتر</a>
+                                        <ul>
+                                            <li><a href="#">ماوس</a></li>
+                                            <li><a href="#">کیبورد</a></li>
+                                            <li><a href="#">مانیتور</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">تجهیزات اداری</a>
+                                        <ul>
+                                            <li><a href="#">کالای اول</a></li>
+                                            <li><a href="#">کالای دوم</a></li>
+                                            <li><a href="#">کالای سوم</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">تبلت</a>
+                                        <ul>
+                                            <li><a href="#">لنوو</a></li>
+                                            <li><a href="#">سامسونگ</a></li>
+                                            <li><a href="#">ایسوس</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">دوربین</a>
+                                        <ul>
+                                            <li><a href="#">کیف,کوله و کاور</a></li>
+                                            <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                            <li><a href="#">کابل صدا و HDMI</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">لوازم جانبی لپ تاپ</a>
+                                        <ul>
+                                            <li><a href="#">کیف,کوله و کاور</a></li>
+                                            <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                            <li><a href="#">کابل صدا و HDMI</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#">اسکوتر برقی</a>
+                                        <ul>
+                                            <li><a href="#">کالای اول</a></li>
+                                            <li><a href="#">کالای دوم</a></li>
+                                            <li><a href="#">کالای سوم</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">ماشین های اداری</a>
+                                        <ul>
+                                            <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                            <li><a href="#">فکس</a></li>
+                                            <li><a href="#">تلقن و بیسیم</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">مچ بند و ساعت هوشمند</a>
+                                        <ul>
+                                            <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                            <li><a href="#">فکس</a></li>
+                                            <li><a href="#">تلقن و بیسیم</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">دوربین های تحت شبکه</a>
+                                        <ul>
+                                            <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                            <li><a href="#">فکس</a></li>
+                                            <li><a href="#">تلقن و بیسیم</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">آرایشی و بهداشتی</a></li>
+                            <li><a href="#">مد و پوشاک</a></li>
+                            <li><a href="#">خانه و آشپزخانه</a></li>
+                            <li><a href="#">ورزش و سفر</a></li>
+                            <li><a href="#">کتاب,لوازم تحریر</a></li>
+                            <li><a href="#">سوپرمارکت</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">سوپرمارکت</a></li>
+                    <li><a href="#">تخفیف ها و پیشنهادها</a></li>
+                    <li><a href="#">دیجی شاپ من</a></li>
+                    <li><a href="#">دیجی کلاب</a></li>
+                    <li><a href="#">سوالی دارید؟</a></li>
+                    <li><a href="#">فروشنده شوید</a></li>
+                </ul>
+                <ul class="promotion"><li><a href="#">لطفا شهر و استان خود را انتخاب کنید</a><i class="fa fa-map-marker"></i></li></ul>
+
+        </nav>
+        
+    </header>
+    
+    <section class="main-cart container">
+        <div class="o-page__content">
+            <div class="o-headline">
+                <div id="main-cart"><span class="c-checkout-text c-checkout__tab--active">سبد خرید</span><span class="c-checkout__tab-counter">۳</span></div>
+                <div id="sfl-cart"><span class="c-checkout-text">لیست خرید بعدی</span></div>
+            </div>
+            <div class="c-checkout">
+                <div class="c-checkout__header ">
+                    <span class="c-checkout__header-title">ارسال عادی</span>
+                    <span class="c-checkout__header-extra-info"> (۲ کالا)</span>
+                    <span class="c-checkout__header-delivery-cost"> هزینه ارسال: رایگان </span>
+                </div>
+                <ul class="c-checkout__items">
+                    <li class="c-checkout__item">
+                        <div class="c-checkout__row">
+                            <div class="c-checkout__col--thumb">
+                                <a href="#"><img src="assets/images/119350700.jpg" alt=""></a>
+                            </div>
+                            <div class="c-checkout__col--desc">
+                                <a href="#">تبلت سامسونگ مدل GALAXY TAB S6 ظرفیت 128 گیگابایت</a>
+                                <p class="c-checkout__guarantee">گارانتی 18 ماهه آسان سرویس</p>
+                                <p class="c-checkout__dealer"> فروشنده: سایتک</p>
+                                <div class="c-checkout__variant c-checkout__variant--color"></div>
+                                <div class="c-checkout__col--information">
+                                    <div class="c-checkout__col c-checkout__col--counter">
+                                        <div class="c-cart-item__quantity-row">
+                                            <div class="c-quantity-selector">
+                                                <button type="button" class="c-quantity-selector__add"><i class="fa fa-plus"></i></button>
+                                                <div class="c-quantity-selector__number">۱</div>
+                                                <button type="button" class="c-quantity-selector__remove"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                            <a href="#" class="c-cart-item__save-for-later"><i class="fa fa-th-list"></i> ذخیره در لیست خرید بعدی </a>
+                                            <div class="c-checkout__quantity-error">امکان تغییر تعداد برای این کالا وجود ندارد.</div>
+                                        </div>
+                                    </div>
+                                    <div class="c-checkout__col c-checkout__col--price">
+                                        <!--incredible
+                                        <div class="c-checkout__price c-checkout__price--del">۱۵۰,۰۰۰ تومان </div>
+                                        <div class="c-checkout__price c-checkout__price--discount"> تخفیف شگفت‌انگیز: ۷۱,۰۰۰ تومان </div>
+                                        <!--incredible-->
+                                        <div class="c-checkout__price"> ۱۰,۹۹۹,۰۰۰ تومان</div>
+                                    </div>
+                                </div>
+                                <div class="c-cart-item__stock-info"><span><i class="fa fa-bell"></i> ۴ عدد در انبار باقیست - پیش از اتمام بخرید </span></div>
+                            </div>
+
+                        </div>
+                        <div class="c-checkout__row">
+                            <div class="c-checkout__col--thumb">
+                                <a href="#"><img src="assets/images/112309225.jpg" alt=""></a>
+                            </div>
+                            <div class="c-checkout__col--desc">
+                                <a href="#">دسته بازی بی سیم یوکام کد 8008</a>
+                                <p class="c-checkout__guarantee">رنگ سفید</p>
+                                <p class="c-checkout__guarantee">سرویس ویژه دیجی شاپ: ۷ روز تضمین بازگشت کالا </p>
+                                <p class="c-checkout__dealer"> فروشنده: رایان دیجیتال </p>
+                                <div class="c-checkout__variant c-checkout__variant--color"></div>
+                                <div class="c-checkout__col--information">
+                                    <div class="c-checkout__col c-checkout__col--counter">
+                                        <div class="c-cart-item__quantity-row">
+                                            <div class="c-quantity-selector">
+                                                <button type="button" class="c-quantity-selector__add"><i class="fa fa-plus"></i></button>
+                                                <div class="c-quantity-selector__number">۱</div>
+                                                <button type="button" class="c-quantity-selector__remove"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                            <a href="#" class="c-cart-item__save-for-later"><i class="fa fa-th-list"></i> ذخیره در لیست خرید بعدی </a>
+                                            <div class="c-checkout__quantity-error">امکان تغییر تعداد برای این کالا وجود ندارد.</div>
+                                        </div>
+                                    </div>
+                                    <div class="c-checkout__col c-checkout__col--price">
+                                        <!--incredible
+                                        <div class="c-checkout__price c-checkout__price--del">۱۵۰,۰۰۰ تومان </div>
+                                        <div class="c-checkout__price c-checkout__price--discount"> تخفیف شگفت‌انگیز: ۷۱,۰۰۰ تومان </div>
+                                        <!--incredible-->
+                                        <div class="c-checkout__price"> ۱۵۵,۰۰۰ تومان</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li><!--cart-item-->
+                </ul>
+                <div class="c-checkout__to-shipping-sticky">
+                    <a href="shipping.html" class="c-checkout__to-shipping-link">ادامه فرایند خرید</a>
+                    <div class="c-checkout__to-shipping-price-report">
+                        <p>مبلغ قابل پرداخت</p>
+                        <div class="c-checkout__to-shipping-price-report--price">۱۹۶,۷۰۰ <span>تومان</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="o-page__aside">
+            <div class="c-checkout-aside">
+                <div class="c-checkout-summary">
+                    <ul class="c-checkout-summary__summary">
+                        <li>
+                        <span>قیمت کالاها (۱)</span>
+                        <span> ۱۹۸,۲۰۰ تومان </span>
+                        </li>
+                        <!--incredible-->
+                        <li class="c-checkout-summary__discount">
+                            <span> تخفیف کالاها </span>
+                            <span class="discount-price">۱,۵۰۰ تومان</span>
+                        </li>
+                        <!--incredible-->
+                        <li class="has-devider">
+                            <span>جمع</span>
+                            <span> ۱۹۶,۷۰۰ تومان </span>
+                        </li>
+                        <li>
+                            <span>هزینه ارسال</span>
+                            <span></span>
+                        </li>
+                        <li>
+                            <span style="font-size: 1.1em;padding-right: 10px;">ارسال عادی</span>
+                            <span style="font-size: 1.1em;padding-right: 10px;">رایگان</span>
+                        </li>
+                        <li class="has-devider">
+                            <span> مبلغ قابل پرداخت </span>
+                            <span> ۱۹۶,۷۰۰ تومان </span>
+                        </li>
+                        <li class="pd-10">
+                            <span> <i class="fa fa-money"></i> امتیاز دیجی کلاب</span>
+                            <span> ۲۰ امتیاز </span>
+                        </li>
+                    </ul>
+                    <div class="c-checkout-summary__main">
+                        <div class="c-checkout-summary__content">
+                            <div><span> کالاهای موجود در سبد شما ثبت و رزرو نشده‌اند، برای ثبت سفارش مراحل بعدی را تکمیل کنید.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-checkout-feature-aside">
+                    <ul>
+                        <li class="c-checkout-feature-aside__item c-checkout-feature-aside__item--guarantee">هفت روز ضمانت تعویض</li>
+                        <li class="c-checkout-feature-aside__item c-checkout-feature-aside__item--cash">پرداخت در محل با کارت بانکی</li>
+                        <li class="c-checkout-feature-aside__item c-checkout-feature-aside__item--express">تحویل اکسپرس</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <section class="cart-empty container" id="cart-sfl">
+        <div class="cart-sfl__icon"></div>
+        <div class="cart-empty__title" style="font-size: 2em;"> لیست خرید بعدی شما خالی است! </div>
+        <div class="cart-sfl__links">
+            <p>شما می‌توانید محصولاتی که به سبد خرید خود افزوده‌اید و فعلا قصد خرید آن‌ها را ندارید، در لیست خرید بعدی قرار داده و هر زمان مایل بودید آن‌ها را به سبد خرید اضافه کرده و خرید آن‌ها را تکمیل کنید. </p>
+        </div>
+    </section>
+    
+    <div class="jump-to-up">
+        <i class="fa fa-chevron-up"></i> <span> بازگشت به بالا </span>
+    </div>
+    <footer>
+        <section class="footer container">
+            <div class="icon">
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/1.svg" alt="">
+                        <span>7 روز ضمانت بازگشت</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/2.svg" alt="">
+                        <span>پرداخت در محل</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/4.svg" alt="">
+                        <span>تحویل اکسپرس</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/3.svg" alt="">
+                        <span>پشتیبانی ۲۴ ساعته</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/5.svg" alt="">
+                        <span>ضمانت اصل بودن کالا</span>
+                    </a>
+                </div> <!--icon-item-->
+            </div>
+            <div class="footer-content">
+                <div class="shop-help">
+                    <h3 class="head">راهنمای خرید از شاپ</h3>
+                    <ul>
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+                        <li><a href="#">شیوه های پرداخت</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h3 class="head">خدمات مشتریان</h3>
+                    <ul>
+                        <li><a href="#">پاسخ به پرسش های متداول</a></li>
+                        <li><a href="#">رویه های بازگرداندن کالا</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3 class="head">از تخفیف ها و جدیدترین های شاپ با خبر باشید</h3>
+                    <div class="content">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <h3 class="head">ما را در شبکه های اجتماعی دنبال کنید</h3>
+                        <div class="social">
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-twitter-square"></i></a>
+                            <a href=""><i class="fa fa-facebook-square"></i></a>
+                            <a href=""><i class="fa fa-google-plus-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert">
+                    <h3 class="head">مجوزهای فروشگاه</h3>
+                    <div class="image">
+                        <img src="assets/images/cert/enamad.png" alt="">
+                        <img src="assets/images/cert/samandehi.png" alt="">
+                    </div>
+                </div>
+        </div> <!-- footer-content -->
+        
+        <div class="footer-contact">
+            <div class="contact">
+                <span>هفت روز هفته, ۲۴ ساعت شبانه روز پاسخگوی شما هستیم,</span>
+                <span>شماره تماس : ۰۴۴-۳۳۳۳</span>
+                <span>آدرس ایمیل : info@site.com</span>
+            </div>
+            <div class="app">
+                <img src="assets/images/bazar.png" alt="">
+                <img src="assets/images/sibapp.png" alt="">
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>استفاده از مطالب فروشگاه اینترنتی دیجی‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به شرکت فلان (فروشگاه آنلاین دیجی‌کالا) می‌باشد.</p>
+        </div>
+        
+    </section>
+    </footer>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="assets/vendor/slicknav/jquery.slicknav.min.js"></script>
+    <script src="assets/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/persianumber.min.js"></script>
+    <script src="assets/vendor/elevatezoom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

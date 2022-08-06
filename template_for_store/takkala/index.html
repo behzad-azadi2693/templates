@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>فروشگاه اینترنتی</title>
+    <link rel="stylesheet" href="assets/vendor/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/vendor/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mediaq.css">
+</head>
+
+<body>
+    <header>
+    <section class="top-head container">
+        <div class="right-head">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.svg" ></a>
+            </div>
+            <form action="#">
+                <button><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="جستجو در دیجی شاپ ...">
+            </form>
+        </div>
+        <div class="left-head">
+            <div class="login-box">
+                <div class="log-reg" id="logreg">
+                    <i class="fa fa-user"></i>
+                    <a href="login.html"> ورود به حساب کاربری </a>
+
+                    <!--<div class="user-modal">
+                        <a class="login" href="#">ورود به دیجی کالا</a>
+                        <div class="newuser">
+                            <span>کاربر جدید هستید؟</span>
+                            <a href="#">ثبت نام</a>
+                        </div>
+                        <a class="profile" href="#"><i class="fa fa-user"></i> پروفایل</a>
+                        <a class="order" href="#"><i class="fa fa-folder"></i> پیگیری سفارش</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="devider"></div>
+
+            <a href="cart.html" class="cart">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+        </div>
+
+
+    </section>
+
+    <nav class="top-nav container">
+        <ul class="dropdown" id="mynavmenu">
+            <li class="main-category"><i class="fa fa-bars"></i><a href="#">دسته بندی کالاها</a>
+                <ul class="dropdown2">
+                    <li><a href="#">کالای دیجیتال</a>
+                        <ul class="megamenu">
+                            <li><a href="#">موبایل</a>
+                                <ul>
+                                    <li><a href="#">مدل موبایل</a></li>
+                                    <li><a href="#">کیف و کاور</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">کامپیوتر</a>
+                                <ul>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">تجهیزات اداری</a>
+                                <ul>
+                                    <li><a href="#">کالای اول</a></li>
+                                    <li><a href="#">کالای دوم</a></li>
+                                    <li><a href="#">کالای سوم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">تبلت</a>
+                                <ul>
+                                    <li><a href="#">لنوو</a></li>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">ایسوس</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">دوربین</a>
+                                <ul>
+                                    <li><a href="#">کیف,کوله و کاور</a></li>
+                                    <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                    <li><a href="#">کابل صدا و HDMI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">لوازم جانبی لپ تاپ</a>
+                                <ul>
+                                    <li><a href="#">کیف,کوله و کاور</a></li>
+                                    <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                    <li><a href="#">کابل صدا و HDMI</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">اسکوتر برقی</a>
+                                <ul>
+                                    <li><a href="#">کالای اول</a></li>
+                                    <li><a href="#">کالای دوم</a></li>
+                                    <li><a href="#">کالای سوم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ماشین های اداری</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">مچ بند و ساعت هوشمند</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">دوربین های تحت شبکه</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">آرایشی و بهداشتی</a></li>
+                    <li><a href="#">مد و پوشاک</a></li>
+                    <li><a href="#">خانه و آشپزخانه</a></li>
+                    <li><a href="#">ورزش و سفر</a></li>
+                    <li><a href="#">کتاب,لوازم تحریر</a></li>
+                    <li><a href="#">سوپرمارکت</a></li>
+                </ul>
+            </li>
+            <li><a href="#">سوپرمارکت</a></li>
+            <li><a href="#">تخفیف ها و پیشنهادها</a></li>
+            <li><a href="#">دیجی شاپ من</a></li>
+            <li><a href="#">دیجی کلاب</a></li>
+            <li><a href="#">سوالی دارید؟</a></li>
+            <li><a href="#">فروشنده شوید</a></li>
+        </ul>
+        <ul class="promotion"><li><a href="#">لطفا شهر و استان خود را انتخاب کنید</a><i class="fa fa-map-marker"></i></li></ul>
+
+    </nav>
+
+</header>
+
+    <article class="main-article">
+        <!--<div class="main-slider">
+            <a class="slide-item" href="#" target="_blank" style="background-image: url(assets/images/slider/slide9.jpg)"> </a>
+        </div>-->
+        <div id="mainslider" class="main-slider swiper-container">
+            <div class="swiper-wrapper">
+                <a href="#" target="_blank" class="slide-item swiper-slide" style="background-image: url(assets/images/slider/slide6.jpg)"> </a>
+                <a href="#" target="_blank" class="slide-item swiper-slide" style="background-image: url(assets/images/slider/slide7.jpg)"> </a>
+                <a href="#" target="_blank" class="slide-item swiper-slide" style="background-image: url(assets/images/slider/slide8.jpg)"> </a>
+                <a href="#" target="_blank" class="slide-item swiper-slide" style="background-image: url(assets/images/slider/slide9.jpg)"> </a>
+            </div>
+            <div id="mslider-nbtn" class="swiper-button-next"></div>
+            <div id="mslider-pbtn" class="swiper-button-prev"></div>
+            <div class="swiper-pagination mainslider-btn"></div>
+        </div>
+        <aside class="c-adplacement">
+            <a href="#"><img src="assets/images/slider/1000020035.gif" alt=""></a>
+            <a href="#" ><img src="assets/images/slider/1000020024.jpg" alt=""></a>
+        </aside>
+    </article>
+    <div class="clear"></div>
+
+    <div class="c-swiper-specials--incredible">
+        <section class="icontainer">
+            <a href="#" class="specials__title">
+                <img src="assets/images/d9b15d68.png" alt="پیشنهاد شگفت‌انگیز">
+                <div class="specials__btn">مشاهده همه</div>
+            </a>
+        <div class="swiper--specials">
+            <div id="inc-slider" class="swiper-container">
+                <div class="product-box swiper-wrapper">
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/965174.jpg" alt=""></a>
+                        <a class="title" href="#">گوشی موبایل شیائومی مدل Redmi Note 8 Pro M1906G7G دو سیم‌ کارت</a>
+                        <div class="inc-product-price">
+                            <del>۲,۴۵۶,۰۰۰</del>
+                            <div class="c-price__discount-oval"><span>۳۰٪</span></div>
+                            <span class="price">۱,۴۳۳,۰۰۰ </span>تومان
+                        </div>
+                        <div class="c-product-box__amazing">
+                            <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                        </div>
+                    </div><!--item-->
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/112948101.jpg" alt=""></a>
+                        <a class="title" href="#">گوشی موبایل شیائومی مدل Mi 9T M1903F10G دو سیم‌ کارت</a>
+                        <div class="inc-product-price">
+                            <del>۸۷,۰۰۰</del>
+                            <div class="c-price__discount-oval"><span>۴۰٪</span></div>
+                            <span class="price">۴۳,۰۰۰ </span>تومان
+                        </div>
+                        <div class="c-product-box__amazing">
+                            <div class="c-product-box__timer" data-countdown="2021/08/26 14:22:22">۱۲:۵۲:۳۹</div>
+                        </div>
+                    </div><!--item-->
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/112551619.jpg" alt=""></a>
+                        <a class="title" href="#">گوشی موبایل سامسونگ مدل Galaxy Note 10 Plus N975F/DS</a>
+                        <div class="inc-product-price">
+                            <del>۱۲,۴۵۶,۰۰۰</del>
+                            <div class="c-price__discount-oval"><span>۳۰٪</span></div>
+                            <span class="price">۹,۴۳۳,۰۰۰ </span>تومان
+                        </div>
+                        <div class="c-product-box__amazing">
+                            <div class="c-product-box__timer" data-countdown="2021/08/07 12:22:22">۱۲:۵۲:۳۹</div>
+                        </div>
+                    </div><!--item-->
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/111253599.jpg" alt=""></a>
+                        <a class="title" href="#">تبلت سامسونگ مدل Galaxy Tab S5e 10.5 LTE 2019 SM-T725 </a>
+                        <div class="inc-product-price">
+                            <del>۶,۶۴۵,۰۰۰</del>
+                            <div class="c-price__discount-oval"><span>۳۰٪</span></div>
+                            <span class="price">۴,۳۵۳,۰۰۰ </span>تومان
+                        </div>
+                        <div class="c-product-box__amazing">
+                            <div class="c-product-box__timer" data-countdown="2021/08/09 18:22:22">۱۲:۵۲:۳۹</div>
+                        </div>
+                    </div><!--item-->
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/113944020.jpg" alt=""></a>
+                        <a class="title" href="#">اندروید باکس مدل R69</a>
+                        <div class="inc-product-price">
+                            <del>۲,۵۴۶,۰۰۰</del>
+                            <div class="c-price__discount-oval"><span>۶۶٪</span></div>
+                            <span class="price">۱,۴۳۳,۰۰۰ </span>تومان
+                        </div>
+                        <div class="c-product-box__amazing">
+                            <div class="c-product-box__timer" data-countdown="2021/08/25 20:22:22">۱۲:۵۲:۳۹</div>
+                        </div>
+                    </div><!--item-->
+                    <div class="product-item swiper-slide">
+                        <a href="#"><img src="assets/images/2901119.jpg" alt=""></a>
+                        <a class="title" href="#">دسته بازی هویت مدل G89W</a>
+                        <div class="inc-product-price">
+                            <del>۸۷,۰۰۰</del>
+                            <div class="c-price__discount-oval"><span>۴۰٪</span></div>
+                            <span class="price">۴۳,۰۰۰ </span>تومان
+                        </div>
+                        <div class="c-product-box__amazing">
+                            <div class="c-product-box__timer" data-countdown="2021/08/10 20:22:22">۱۲:۵۲:۳۹</div>
+                        </div>
+                    </div><!--item-->
+            </div>
+        </div>
+        </section>
+    </div>
+    <section class="image-row container">
+        <a href="#"><img src="assets/images/inc1.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/inc2.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/inc3.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/inc4.jpg" alt=""></a>
+    </section>
+    <div class="c-swiper-specials--incredible c-swiper-specials--fresh">
+        <section class="icontainer">
+            <a href="#" class="specials__title">
+                <img src="assets/images/8af90c4b.png" alt="پیشنهاد شگفت‌انگیز">
+                <div class="specials__btn">مشاهده همه</div>
+            </a>
+            <div class="swiper--specials">
+                <div id="sp-slider" class="swiper-container">
+                    <div class="product-box swiper-wrapper">
+                        <div class="product-item swiper-slide">
+                            <a href="#"><img src="assets/images/112178547.jpg" alt=""></a>
+                            <a class="title" href="#">کنسرو ماهی تون در روغن ماوی مقدار 180 گرم</a>
+                            <div class="inc-product-price">
+                                <del>۲۴۵,۰۰۰</del>
+                                <div class="c-price__discount-oval"><span>۳۳٪</span></div>
+                                <span class="price">۱۴۳,۰۰۰ </span>تومان
+                            </div>
+                            <div class="c-product-box__amazing">
+                                <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                            </div>
+                        </div><!--item-->
+                        <div class="product-item swiper-slide">
+                            <a href="#"><img src="assets/images/110534625.jpg" alt=""></a>
+                            <a class="title" href="#">ماست سبو پروبیوتیک هراز - 2000 گرم</a>
+                            <div class="inc-product-price">
+                                <del>۸۷,۰۰۰</del>
+                                <div class="c-price__discount-oval"><span>۴۰٪</span></div>
+                                <span class="price">۴۳,۰۰۰ </span>تومان
+                            </div>
+                            <div class="c-product-box__amazing">
+                                <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                            </div>
+                        </div><!--item-->
+                        <div class="product-item swiper-slide">
+                            <a href="#"><img src="assets/images/113929782.jpg" alt=""></a>
+                            <a class="title" href="#">میگو سایز 90-71 بیستون - 500 گرم</a>
+                            <div class="inc-product-price">
+                                <del>۱۲۶,۰۰۰</del>
+                                <div class="c-price__discount-oval"><span>۶۳٪</span></div>
+                                <span class="price">۳۳,۰۰۰ </span>تومان
+                            </div>
+                            <div class="c-product-box__amazing">
+                                <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                            </div>
+                        </div><!--item-->
+                        <div class="product-item swiper-slide">
+                            <a href="#"><img src="assets/images/119512276.jpg" alt=""></a>
+                            <a class="title" href="#">شکر قهوه ای بن مانو مقدار 500 گرم</a>
+                            <div class="inc-product-price">
+                                <del>۴,۰۰۰</del>
+                                <div class="c-price__discount-oval"><span>۵۰٪</span></div>
+                                <span class="price">۳۳,۰۰۰ </span>تومان
+                            </div>
+                            <div class="c-product-box__amazing">
+                                <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                            </div>
+                        </div><!--item-->
+                        <div class="product-item swiper-slide">
+                            <a href="#"><img src="assets/images/114418008.jpg" alt=""></a>
+                            <a class="title" href="#">فرآورده کاکائویی مغزدار شیری باراکا - 450 گرم </a>
+                            <div class="inc-product-price">
+                                <del>۵۶,۰۰۰</del>
+                                <div class="c-price__discount-oval"><span>۶٪</span></div>
+                                <span class="price">۳۳,۰۰۰ </span>تومان
+                            </div>
+                            <div class="c-product-box__amazing">
+                                <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                            </div>
+                        </div><!--item-->
+                        <div class="product-item swiper-slide">
+                            <a href="#"><img src="assets/images/110228964.jpg" alt=""></a>
+                            <a class="title" href="#">کوکی اسمارتیزی لاکچری گرجی وزن 350 گرم</a>
+                            <div class="inc-product-price">
+                                <del>۸۷,۰۰۰</del>
+                                <div class="c-price__discount-oval"><span>۴۰٪</span></div>
+                                <span class="price">۴۳,۰۰۰ </span>تومان
+                            </div>
+                            <div class="c-product-box__amazing">
+                                <div class="c-product-box__timer" data-countdown="2021/08/30 08:22:22">۱۲:۵۲:۳۹</div>
+                            </div>
+                        </div><!--item-->
+                    </div>
+                </div>
+        </section>
+    </div>
+    <section class="product-wrapper container">
+        <div class="headline">
+            <h3>کالای دیجیتال</h3></div>
+        <div id="pslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/965174.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل شیائومی مدل Redmi Note 8 Pro M1906G7G دو سیم‌ کارت</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/537196.jpg" alt=""></a> <a class="title" href="#">تلویزیون ال ای دی هوشمند ایکس ویژن مدل 43XT725 سایز 43 اینچ</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/112544124.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل سامسونگ مدل Galaxy Note 10 SM-N970F/DS دو سیم‌کارت </a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/3307715.jpg" alt=""></a> <a class="title" href="#">کارت حافظه microSDXC ویکو من مدل Final 600X کلاس 10 استاندارد UHS-I</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/112309225.jpg" alt=""></a> <a class="title" href="#">دسته بازی بی سیم یوکام کد 8008</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/119239538.jpg" alt=""></a> <a class="title" href="#">فلش مموری کداک مدل Mini Metal K802 ظرفیت 64 گیگ</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/965174.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل شیائومی مدل Redmi Note 8 Pro M1906G7G دو سیم‌ کارت</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+            </div>
+            <div id="pslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+            <div id="pslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="image-row container">
+        <a href="#"><img src="assets/images/1000005395.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/1000019673.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/1000009159.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/1816.jpg" alt=""></a>
+    </section>
+    <section class="product-wrapper container">
+        <div class="headline">
+            <h3>محصولات پربازدید اخیر</h3></div>
+        <div id="vpslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/111890636.jpg" alt=""></a> <a class="title" href="#">ماسک تنفسی لیبراتون مدل 0011 بسته 50 عددی </a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/113851602.jpg" alt=""></a> <a class="title" href="#">ماسک تزیینی صورت کد MA2</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/111460776.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل سامسونگ مدل Galaxy A50 SM-A505F/DS</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/p8.jpg" alt=""></a> <a class="title" href="#">کوله پشتی برنامه نویسان</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/113562469.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل سامسونگ مدل Galaxy A10s SM-A107F/DS</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/p8.jpg" alt=""></a> <a class="title" href="#">کوله پشتی برنامه نویسان</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+            </div>
+            <div id="vpslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+            <div id="vpslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="image-row container">
+        <a href="#"><img style="max-width: 100%" src="assets/images/banner-2.jpg" alt=""></a>
+    </section>
+    <section class="product-wrapper container">
+        <div class="headline two-headline">
+            <h3>منتخب جدیدترین کالاها</h3> <a href="#">مشاهده همه</a></div>
+        <div id="newpslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/p6.jpg" alt=""></a> <a class="title" href="#">مایکروو مدل جدید</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/119238416.jpg" alt=""></a> <a class="title" href="#">برچسب بدنه خودرو طرح گوزن کد 146</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/119279565.jpg" alt=""></a> <a class="title" href="#">اسپرسوساز مباشی مدل ECM2015</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/119240285.jpg" alt=""></a> <a class="title" href="#">کاور مدل SOR-010 مناسب برای گوشی موبایل سامسونگ</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/4272035.jpg" alt=""></a> <a class="title" href="#">دسته بازی بی سیم مکسیدر مدل MX-GP8110 WN12 بسته دو عددی</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/p6.jpg" alt=""></a> <a class="title" href="#">مایکروو مدل جدید</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+            </div>
+            <div id="newpslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+            <div id="newpslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="product-wrapper container">
+        <div class="headline">
+            <h3>محصولات پرفروش</h3></div>
+        <div id="mostpslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/363465.jpg" alt=""></a> <a class="title" href="#">شارژر همراه انکر مدل A1271 PowerCore ظرفیت 20100 م</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/114776337.jpg" alt=""></a> <a class="title" href="#">لامپ ال ای دی 20 وات سیدکو کد 001 پایه E27</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/p8.jpg" alt=""></a> <a class="title" href="#">کوله پشتی برنامه نویسان</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/110177926.jpg" alt=""></a> <a class="title" href="#">تخم مرغ تازه پروتانا بسته 20 عددی</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/3830350.jpg" alt=""></a> <a class="title" href="#">کرم ضد آنفلوانزا مکث آویرال مدل Adults حجم 70 میلی</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/p8.jpg" alt=""></a> <a class="title" href="#">کوله پشتی برنامه نویسان</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+            </div>
+            <div id="mostpslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+            <div id="mostpslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="image-row container">
+        <a href="#"><img src="assets/images/1000020363.jpg" alt=""></a>
+        <a href="#"><img src="assets/images/1000020196.jpg" alt=""></a>
+    </section>
+    <section class="product-wrapper container">
+        <div class="headline">
+            <h3>برندهای ویژه</h3></div>
+        <div id="brandslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/brand/adata.png" alt=""></a>
+                </div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/brand/samsung.png" alt=""></a>
+                </div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/brand/xvision.png" alt=""></a>
+                </div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/brand/lg.png" alt=""></a>
+                </div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/brand/parskhazar.png" alt=""></a>
+                </div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/brand/xvision.png" alt=""></a>
+                </div>
+            </div>
+            <div id="brandslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+            <div id="brandslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+        </div>
+    </section>
+    <div class="jump-to-up"> <i class="fa fa-chevron-up"></i> <span> بازگشت به بالا </span></div>
+    <footer>
+        <section class="footer container">
+            <div class="icon">
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/1.svg" alt=""> <span>7 روز ضمانت بازگشت</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/2.svg" alt=""> <span>پرداخت در محل</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/4.svg" alt=""> <span>تحویل اکسپرس</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/3.svg" alt=""> <span>پشتیبانی ۲۴ ساعته</span> </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#"> <img src="assets/images/icon/5.svg" alt=""> <span>ضمانت اصل بودن کالا</span> </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="shop-help">
+                    <h3 class="head">راهنمای خرید از شاپ</h3>
+                    <ul>
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+                        <li><a href="#">شیوه های پرداخت</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h3 class="head">خدمات مشتریان</h3>
+                    <ul>
+                        <li><a href="#">پاسخ به پرسش های متداول</a></li>
+                        <li><a href="#">رویه های بازگرداندن کالا</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3 class="head">از تخفیف ها و جدیدترین های شاپ با خبر باشید</h3>
+                    <div class="content">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <h3 class="head">ما را در شبکه های اجتماعی دنبال کنید</h3>
+                        <div class="social"> <a href=""><i class="fa fa-instagram"></i></a> <a href=""><i class="fa fa-twitter-square"></i></a> <a href=""><i class="fa fa-facebook-square"></i></a> <a href=""><i class="fa fa-google-plus-square"></i></a></div>
+                    </div>
+                </div>
+                <div class="cert">
+                    <h3 class="head">مجوزهای فروشگاه</h3>
+                    <div class="image"> <img src="assets/images/cert/enamad.png" alt=""> <img src="assets/images/cert/samandehi.png" alt=""></div>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <div class="contact"> <span>هفت روز هفته, ۲۴ ساعت شبانه روز پاسخگوی شما هستیم,</span> <span>شماره تماس : ۰۴۴-۳۳۳۳</span> <span>آدرس ایمیل : info@site.com</span></div>
+                <div class="app"> <img src="assets/images/bazar.png" alt=""> <img src="assets/images/sibapp.png" alt=""></div>
+            </div>
+            <div class="copyright">
+                <p>استفاده از مطالب فروشگاه اینترنتی دیجی‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به شرکت فلان (فروشگاه آنلاین دیجی‌کالا) می‌باشد.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="assets/vendor/slicknav/jquery.slicknav.min.js"></script>
+    <script src="assets/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/persianumber.min.js"></script>
+    <script src="assets/vendor/elevatezoom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

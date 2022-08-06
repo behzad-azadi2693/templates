@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>فروشگاه اینترنتی</title>
+    <link rel="stylesheet" href="assets/vendor/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/vendor/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mediaq.css">
+</head>
+<body>
+    <header>
+    <section class="top-head container">
+        <div class="right-head">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.svg" ></a>
+            </div>
+            <form action="#">
+                <button><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="جستجو در تک شاپ ...">
+            </form>
+        </div>
+        <div class="left-head">
+            <div class="login-box">
+                <div class="log-reg" id="logreg">
+                    <i class="fa fa-user"></i>
+                    <a href="login.html"> ورود به حساب کاربری </a>
+
+                    <!--<div class="user-modal">
+                        <a class="login" href="#">ورود به تک کالا</a>
+                        <div class="newuser">
+                            <span>کاربر جدید هستید؟</span>
+                            <a href="#">ثبت نام</a>
+                        </div>
+                        <a class="profile" href="#"><i class="fa fa-user"></i> پروفایل</a>
+                        <a class="order" href="#"><i class="fa fa-folder"></i> پیگیری سفارش</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="devider"></div>
+
+            <a href="cart.html" class="cart">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+        </div>
+
+
+    </section>
+
+    <nav class="top-nav container">
+        <ul class="dropdown" id="mynavmenu">
+            <li class="main-category"><i class="fa fa-bars"></i><a href="#">دسته بندی کالاها</a>
+                <ul class="dropdown2">
+                    <li><a href="#">کالای تکتال</a>
+                        <ul class="megamenu">
+                            <li><a href="#">موبایل</a>
+                                <ul>
+                                    <li><a href="#">مدل موبایل</a></li>
+                                    <li><a href="#">کیف و کاور</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">کامپیوتر</a>
+                                <ul>
+                                    <li><a href="#">ماوس</a></li>
+                                    <li><a href="#">کیبورد</a></li>
+                                    <li><a href="#">مانیتور</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">تجهیزات اداری</a>
+                                <ul>
+                                    <li><a href="#">کالای اول</a></li>
+                                    <li><a href="#">کالای دوم</a></li>
+                                    <li><a href="#">کالای سوم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">تبلت</a>
+                                <ul>
+                                    <li><a href="#">لنوو</a></li>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">ایسوس</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">دوربین</a>
+                                <ul>
+                                    <li><a href="#">کیف,کوله و کاور</a></li>
+                                    <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                    <li><a href="#">کابل صدا و HDMI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">لوازم جانبی لپ تاپ</a>
+                                <ul>
+                                    <li><a href="#">کیف,کوله و کاور</a></li>
+                                    <li><a href="#">کابل ها رابط و مبدل</a></li>
+                                    <li><a href="#">کابل صدا و HDMI</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">اسکوتر برقی</a>
+                                <ul>
+                                    <li><a href="#">کالای اول</a></li>
+                                    <li><a href="#">کالای دوم</a></li>
+                                    <li><a href="#">کالای سوم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ماشین های اداری</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">مچ بند و ساعت هوشمند</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">دوربین های تحت شبکه</a>
+                                <ul>
+                                    <li><a href="#">لوازم جانبی پرینتر</a></li>
+                                    <li><a href="#">فکس</a></li>
+                                    <li><a href="#">تلقن و بیسیم</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">آرایشی و بهداشتی</a></li>
+                    <li><a href="#">مد و پوشاک</a></li>
+                    <li><a href="#">خانه و آشپزخانه</a></li>
+                    <li><a href="#">ورزش و سفر</a></li>
+                    <li><a href="#">کتاب,لوازم تحریر</a></li>
+                    <li><a href="#">سوپرمارکت</a></li>
+                </ul>
+            </li>
+            <li><a href="#">سوپرمارکت</a></li>
+            <li><a href="#">تخفیف ها و پیشنهادها</a></li>
+            <li><a href="#">تک شاپ من</a></li>
+            <li><a href="#">تک کلاب</a></li>
+            <li><a href="#">سوالی دارید؟</a></li>
+            <li><a href="#">فروشنده شوید</a></li>
+        </ul>
+        <ul class="promotion"><li><a href="#">لطفا شهر و استان خود را انتخاب کنید</a><i class="fa fa-map-marker"></i></li></ul>
+
+    </nav>
+
+</header>
+    
+    <section class="cart-empty container">
+        <div class="cart-empty__icon"></div>
+        <div class="cart-empty__title">سبد خرید شما خالیست!</div>
+        <div class="cart-empty__links">
+            <p>می‌توانید برای مشاهده محصولات بیشتر به صفحات زیر بروید:</p>
+            <div class="cart-empty__link-urls">
+                <a href="#" class="btn-link-spoiler">لیست مورد علاقه من</a>
+                <a href="#" class="btn-link-spoiler">محصولات شگفت‌انگیز</a>
+                <a href="#" class="btn-link-spoiler">محصولات پرفروش روز</a>
+            </div>
+        </div>
+        <a href="#" class="btn btn-cart">ادامه خرید در تک کالا</a>
+    </section>
+    
+    <section class="icon-wrapper container">
+        <div class="icon">
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/1.svg" alt="">
+                        <span>7 روز ضمانت بازگشت</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/2.svg" alt="">
+                        <span>پرداخت در محل</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/4.svg" alt="">
+                        <span>تحویل اکسپرس</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/3.svg" alt="">
+                        <span>پشتیبانی ۲۴ ساعته</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/5.svg" alt="">
+                        <span>ضمانت اصل بودن کالا</span>
+                    </a>
+                </div> <!--icon-item-->
+            </div>
+    </section>
+    
+    <section class="product-wrapper container">
+        <div class="headline"><h3>احتمالا به محصولات زیر هم علاقه‌مند باشید</h3></div>
+        <div id="pslider" class="swiper-container">
+            <div class="product-box swiper-wrapper">
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/965174.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل شیائومی مدل Redmi Note 8 Pro M1906G7G دو سیم‌ کارت</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/119240285.jpg" alt=""></a> <a class="title" href="#">کاور مدل SOR-010 مناسب برای گوشی موبایل سامسونگ</a> <span class="price">۲,۴۵۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/363465.jpg" alt=""></a> <a class="title" href="#">شارژر همراه انکر مدل A1271 PowerCore ظرفیت 20100 م</a> <span class="price">۲۴۶,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/112551619.jpg" alt=""></a> <a class="title" href="#">گوشی موبایل سامسونگ مدل Galaxy Note 10 Plus N975F/DS</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/111253599.jpg" alt=""></a> <a class="title" href="#">تبلت سامسونگ مدل Galaxy Tab S5e 10.5 LTE 2019 SM-T725</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/113944020.jpg" alt=""></a> <a class="title" href="#">اندروید باکس مدل R69</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+                <div class="product-item swiper-slide">
+                    <a href="#"><img src="assets/images/2901119.jpg" alt=""></a> <a class="title" href="#">دسته بازی هویت مدل G89W</a> <span class="price">۱,۴۳۳,۰۰۰ تومان</span></div>
+
+                </div><!--wrapper-->
+                <!-- Add Arrows -->
+                <div id="pslider-nbtn" class="slider-nbtn swiper-button-next"></div>
+                <div id="pslider-pbtn" class="slider-pbtn swiper-button-prev"></div>
+            </div>
+    </section> <!--product slider-->
+    
+    <div class="jump-to-up">
+        <i class="fa fa-chevron-up"></i> <span> بازگشت به بالا </span>
+    </div>
+    <footer>
+        <section class="footer container">
+            <div class="icon">
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/1.svg" alt="">
+                        <span>7 روز ضمانت بازگشت</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/2.svg" alt="">
+                        <span>پرداخت در محل</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/4.svg" alt="">
+                        <span>تحویل اکسپرس</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/3.svg" alt="">
+                        <span>پشتیبانی ۲۴ ساعته</span>
+                    </a>
+                </div> <!--icon-item-->
+                <div class="icon-item">
+                    <a href="#">
+                        <img src="assets/images/icon/5.svg" alt="">
+                        <span>ضمانت اصل بودن کالا</span>
+                    </a>
+                </div> <!--icon-item-->
+            </div>
+            <div class="footer-content">
+                <div class="shop-help">
+                    <h3 class="head">راهنمای خرید از شاپ</h3>
+                    <ul>
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+                        <li><a href="#">شیوه های پرداخت</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h3 class="head">خدمات مشتریان</h3>
+                    <ul>
+                        <li><a href="#">پاسخ به پرسش های متداول</a></li>
+                        <li><a href="#">رویه های بازگرداندن کالا</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3 class="head">از تخفیف ها و جدیدترین های شاپ با خبر باشید</h3>
+                    <div class="content">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <h3 class="head">ما را در شبکه های اجتماعی دنبال کنید</h3>
+                        <div class="social">
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-twitter-square"></i></a>
+                            <a href=""><i class="fa fa-facebook-square"></i></a>
+                            <a href=""><i class="fa fa-google-plus-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert">
+                    <h3 class="head">مجوزهای فروشگاه</h3>
+                    <div class="image">
+                        <img src="assets/images/cert/enamad.png" alt="">
+                        <img src="assets/images/cert/samandehi.png" alt="">
+                    </div>
+                </div>
+        </div> <!-- footer-content -->
+        
+        <div class="footer-contact">
+            <div class="contact">
+                <span>هفت روز هفته, ۲۴ ساعت شبانه روز پاسخگوی شما هستیم,</span>
+                <span>شماره تماس : ۰۴۴-۳۳۳۳</span>
+                <span>آدرس ایمیل : info@site.com</span>
+            </div>
+            <div class="app">
+                <img src="assets/images/bazar.png" alt="">
+                <img src="assets/images/sibapp.png" alt="">
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>استفاده از مطالب فروشگاه اینترنتی تک‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به شرکت فلان (فروشگاه آنلاین تک‌کالا) می‌باشد.</p>
+        </div>
+        
+    </section>
+    </footer>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="assets/vendor/slicknav/jquery.slicknav.min.js"></script>
+    <script src="assets/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/persianumber.min.js"></script>
+    <script src="assets/vendor/elevatezoom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
